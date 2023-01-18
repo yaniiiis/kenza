@@ -1,0 +1,70 @@
+<div id="page-wrapper">
+  <div class="container-fluid">
+    <div class="row" id="main">
+      <div class="col-sm-12 col-md-12 white" id="content">
+        <h3 style="color: #187de9">liste de projets</h3>
+        <div class="card">
+          <div
+            class="card-body"
+            style="padding-left: 20px"
+            *ngIf="boolrecherch"
+          >
+            <div *ngIf="!projetdomrechercher">
+              <strong
+                ><h3>{{ projetrechercher.nom }}</h3></strong
+              >
+              <p style="font-size: 22px">
+                Lorem ipsum dolor sit met, consecteur adipcing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
+                enim ad minim veniam,
+              </p>
+              <strong style="font-size: 18px"> Technologie :</strong
+              ><i style="font-size: 16px">{{ projetrechercher.techno }}</i>
+              <br />
+              <strong style="font-size: 18px"> Statut :</strong
+              ><i style="font-size: 16px">{{ projetrechercher.statut }}</i>
+            </div>
+          </div>
+
+          <div *ngIf="boolddomaine">
+            <div class="card" *ngFor="let pdom of projetdomrechercher">
+              <div class="card-body" style="padding-left: 20px">
+                <strong
+                  ><h3>{{ pdom.nom }}</h3></strong
+                >
+                <p style="font-size: 22px">
+                  Lorem ipsum dolor sit met, consecteur adipcing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
+                  enim ad minim veniam,
+                </p>
+                <strong style="font-size: 18px"> Technologie :</strong
+                ><i style="font-size: 16px">{{ pdom.techno }}</i> <br />
+                <strong style="font-size: 18px"> Statut :</strong
+                ><i style="font-size: 16px">{{ pdom.statut }}</i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="boolsousdomaine">
+          <div class="card" *ngFor="let psousdom of projetsousdomrechercher">
+            <div class="card-body" style="padding-left: 20px">
+              <strong
+                ><h3>{{ psousdom.nom }}</h3></strong
+              >
+              <p style="font-size: 22px">
+                Lorem ipsum dolor sit met, consecteur adipcing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut
+                enim ad minim veniam,
+              </p>
+              <strong style="font-size: 18px"> Technologie :</strong
+              ><i style="font-size: 16px">{{ psousdom.techno }}</i> <br />
+              <strong style="font-size: 18px"> Statut :</strong
+              ><i style="font-size: 16px">{{ psousdom.statut }}</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

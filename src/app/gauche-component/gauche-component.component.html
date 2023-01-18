@@ -1,0 +1,56 @@
+<div id="wrapper" >
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li>
+                <div class="form-group"><br>
+                    
+                    <input #input 
+                    (keyup.enter)="selectprojetE(input.value)"
+                    type="text" class="form-control" id="usr" >
+                  </div>   
+            </li>
+           <br><br><br>
+            <li>
+                <h4><strong>Domaine</strong></h4>
+
+            </li>
+            <li style="border-left: 20px;">
+                <input 
+                #inputtel (click)="onclickdomaine(inputtel.value)" class="btn btn-primary" type="button" value="telecom">
+                <input #inputfin  (click)="onclickdomaine(inputfin.value)" class="btn btn-primary" type="button" value="finance"><br>
+                <input #inputene (click)="onclickdomaine(inputene.value)" class="btn btn-primary" type="button" value="energie">
+            </li><br>
+            <li> <h3><strong style="left: 50px; top: 100px;">Sous domaine</strong></h3></li>
+            <li *ngIf="domaineselected">
+                <input  #inputsd1 (click)="onclicksousdom(inputsd1.value)"  class="btn btn-primary"type="button" value="{{domaineselected!.sous_domaine[0]}}" >
+                <input  #inputsd2 (click)="onclicksousdom(inputsd2.value)"  class="btn btn-primary" type="button" value="{{domaineselected!.sous_domaine[1]}}"><br>
+                <input  #inputsd3 (click)="onclicksousdom(inputsd3.value)"  *ngIf="domaineselected!.sous_domaine[2]" class="btn btn-primary" type="button" value="{{domaineselected!.sous_domaine[2]}}">
+            </li><br>
+            <li *ngIf="!domaineselected">
+                <input  #inputsd4 (click)="onclicksousdom(inputsd4.value)" class="btn btn-primary" type="button" value="5G" >
+                <input  #inputsd5 (click)="onclicksousdom(inputsd5.value)"  class="btn btn-primary" type="button" value="fibre optique">
+                
+            </li><br>
+            <li><h4><strong> Technologie </strong></h4></li>
+            <li>
+                <input class="btn btn-primary" type="button" value="Java">
+                <input class="btn btn-primary" type="button" value="C#"><br>
+                <input class="btn btn-primary" type="button" value="Neoj">
+                <input class="btn btn-primary" type="button" value="MySql">
+            </li> 
+
+            <li><br>
+            
+             <h4><strong>Statut</strong></h4>
+            
+            </li>
+            <li>
+                <input class="btn btn-primary" type="button" value="prod">
+                <input class="btn btn-primary" type="button" value="dev"><br>
+                <input class="btn btn-primary" type="button" value="init">
+            </li>
+          
+        </ul>
+    </div>
+

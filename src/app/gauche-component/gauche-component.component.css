@@ -1,0 +1,127 @@
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+    
+}
+
+#wrapper {
+    padding-left: 0;    
+}
+
+
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #page-wrapper {
+        padding: 22px 10px;
+    }
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+    
+}
+.top-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+    color: white;
+}
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: white;
+    background-color:white;
+}
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 25px;
+        left: 225px;
+        width: 225px;
+        margin-left:-215px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color:white;
+        height: 600px;
+        background: white;
+        padding: 0px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+         
+        
+    }
+    .side-nav>li {
+        
+       
+          right: -10px;
+
+    }
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #187de9 !important;
+    }
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    /*color: #999;*/
+    color: white;   
+ 
+}
+.side-nav>li>ul>li>a:hover {
+    color: rgb(107, 100, 100);
+}
+.navbar .nav > li > a > .label {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  font-size: 10px;
+  font-weight: normal;
+  min-width: 15px;
+  min-height: 15px;
+  line-height: 1.0em;
+
+  padding: 2px;
+  width: 100%;        
+  padding: 0;
+  background-color:white;
+}
+.navbar .nav > li > a:hover > .label {
+  top: 10px;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+.btn{
+   
+    margin:5px 5px  0;
+    width: 90px;
+    background-color: rgb(136, 134, 134);
+  }
+
+  .btn:focus
+  {
+  background-color: #187de9;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  outline-style: none;
+  }
+  .card-body{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  }
+
+
