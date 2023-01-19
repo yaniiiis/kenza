@@ -9,9 +9,9 @@
             style="padding-left: 20px"
             *ngIf="boolrecherch"
           >
-            <div *ngIf="!projetdomrechercher">
+            <div *ngIf="projetrechercher">
               <strong
-                ><h3>{{ projetrechercher.nom }}</h3></strong
+                ><h3>{{ projetrechercher!.nom }}</h3></strong
               >
               <p style="font-size: 22px">
                 Lorem ipsum dolor sit met, consecteur adipcing elit, sed do
@@ -19,10 +19,10 @@
                 enim ad minim veniam,
               </p>
               <strong style="font-size: 18px"> Technologie :</strong
-              ><i style="font-size: 16px">{{ projetrechercher.techno }}</i>
+              ><i style="font-size: 16px">{{ projetrechercher!.techno }}</i>
               <br />
               <strong style="font-size: 18px"> Statut :</strong
-              ><i style="font-size: 16px">{{ projetrechercher.statut }}</i>
+              ><i style="font-size: 16px">{{ projetrechercher!.statut }}</i>
             </div>
           </div>
 
